@@ -5,7 +5,7 @@
     <title>Beaver Games : Repeat</title>
     <link rel="stylesheet" href="../common/style.css">
     <script src="../common/utils.js"></script>
-    <script src="repeat.js"></script>
+    <script src="repeat2.js"></script>
     <style>
       #controls {
         margin-left:auto;
@@ -109,6 +109,15 @@
   </head>
 
   <body>
+    <!-- Şifre popup penceresi -->
+<div id="passwordModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+background-color: rgba(0,0,0,0.5); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; text-align:center; max-width:300px; margin:auto;">
+    <h2>🎉 Tebrikler!</h2>
+    <p>Şifreniz: <strong>123</strong></p>
+    <button onclick="closePasswordModal()">Kapat</button>
+  </div>
+</div>
     <select id="difficulty">
       <option value=0>Easy</option>
       <option value=1>Normal</option>
